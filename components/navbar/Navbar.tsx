@@ -6,7 +6,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentUser }) => {
     return (
         <nav>
             Navbar
-            <SignButton />
+            <SignButton currentUser={currentUser} />
         </nav>
     )
 }

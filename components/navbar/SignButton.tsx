@@ -2,11 +2,17 @@
 
 import { signIn, signOut } from "next-auth/react";
 
-const SignButton = () => {
+interface SignButtonProps { currentUser?: any }
+
+
+const SignButton: React.FC<SignButtonProps> = ({ currentUser }) => {
     return (
         <>
-            <button onClick={() => signIn('github')}>Sign In</button>
-            <button onClick={() => signOut()}>Sign Out</button>
+            {!currentUser ? (
+                <button onClick={() => signIn('github')}>Sign In</button>
+            ) : (
+                <button onClick={() => signOut()}>Sign Out</button>
+            )}
         </>
     )
 }
