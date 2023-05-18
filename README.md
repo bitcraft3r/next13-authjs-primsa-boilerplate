@@ -10,7 +10,7 @@ Boilerplate for Next.js v13.4 using `/app` router.
 - Auth.js
 - Prisma
 - MongoDB
-- Shadcn/ui
+- [Shadcn/ui](https://ui.shadcn.com/)
 - ESLint
 
 ## Installation
@@ -40,6 +40,10 @@ npm install @prisma/client @next-auth/prisma-adapter
 Then setup `PrismaClient` in `@/app/libs/prismadb.ts`, and `PrismaAdapter` in `@/pages/api/auth/[...nextauth].ts`: https://authjs.dev/reference/adapter/prisma.
 
 For vercel setup: https://www.prisma.io/docs/guides/other/troubleshooting-orm/help-articles/vercel-caching-issue.
+
+4. Setup Shadcn/ui
+
+- Initialize Shadcn/ui `npx shadcn-ui init`, then install components as required e.g. `npx shadcn-ui add button`.
 
 ## Setup
 

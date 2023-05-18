@@ -4,8 +4,8 @@ interface NavbarProps { currentUser?: any }
 
 const Navbar: React.FC<NavbarProps> = ({ currentUser }) => {
     return (
-        <nav>
-            Navbar
+        <nav className="fixed w-full bg-gray-100 z-10 shadow-md p-[1rem] flex justify-between items-center">
+            <div className="tracking-widest">LOGO</div>
             <SignButton currentUser={currentUser} />
         </nav>
     )

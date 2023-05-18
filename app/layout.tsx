@@ -23,7 +23,9 @@ export default async function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar currentUser={currentUser} />
-        <main>{children}</main>
+        <main className="pt-[6rem] mx-[1rem]">
+          {children}
+        </main>
       </body>
     </html>
   )
